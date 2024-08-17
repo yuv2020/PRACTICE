@@ -41,9 +41,18 @@
 
 
     <!-- Table rowspan and colspan -->
-     <table>
+     <table border="black">
         <caption>Food Menu</caption>
-        <thead></thead>
+        <thead>
+            <tr>
+                <th rowspan="2">Item</th>
+                <th colspan="2">Price</th>
+            </tr>
+            <tr>
+                <td>Cost per Kg</td>
+                <td>Cost per Item</td>
+            </tr>
+        </thead>
         <tbody>
             <tr>
                 <td>Frooti</td>
@@ -56,13 +65,46 @@
                 <td>0.18</td>
             </tr>
             <tr>
-                <td rowspan="2">Mixed Vegetable</td>
+                <td >Mixed Vegetable</td>
                 <td>20</td>
                 <td>0.25</td>
             </tr>
         </tbody>
-     </table>
-    
+     </table> <br>
+
+     <!-- Re-createa a table -->
+      <table border="black">
+        <caption>A Test table with merged cells</caption>
+        <thead>
+            <tr>
+                <td rowspan="2"></td>
+                <td colspan="2">Average</td>
+                <td rowspan="2">Redeyes</td>
+            </tr>
+
+            <tr>
+                <td>Height</td>
+                <td>Weight</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Males</td>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td>40%</td>
+            </tr>
+
+            <tr>
+                <td>Females</td>
+                <td>1.7</td>
+                <td>0.002</td>
+                <td>43%</td>
+
+            </tr>
+
+        </tbody>
+      </table>    
 
 </body>
 </html>
